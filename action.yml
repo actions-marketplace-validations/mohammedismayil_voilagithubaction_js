@@ -1,0 +1,13 @@
+name: 'Voila github action using js'
+description: 'Greet someone and record the time'
+inputs:
+  name:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'Robert'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node12'
+  main: 'index.js'
